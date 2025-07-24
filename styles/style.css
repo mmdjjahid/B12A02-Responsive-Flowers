@@ -85,12 +85,65 @@ nav ul li a{
     color: rgba(0, 0, 0, 0.5);
 }
 
+/* Plants */
+
+.Plant-content{
+    text-align: center;
+    margin-bottom: 3.1rem;
+}
+
+.Plant-title{
+    font-weight: bold;
+    font-size: 3.1rem;
+    margin-bottom: 1rem;
+}
+
+.Plant-Cards{
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    row-gap: 2rem;
+    column-gap: 1.5rem;
+}
+
+.name{
+    font-weight: 500;
+    font-size: 1.5rem;
+    line-height: 150%;
+    color: #111111;
+
+}
+.price{
+    font-weight: bold;
+    font-size: 1.5rem;
+    line-height: 150%;
+    color: #111111;
+
+}
+.btn{
+    padding: 1.2rem 5rem;
+    background-color: #E95A08;
+    border: none;
+    color: #FFFFFF;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.name,.price{
+    margin: .7rem;
+}
+.card-content{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+
 
 @media screen and (max-width:640px){
     .hide{
         display: none;
     }
-    header, .banner-content{
+    header, .banner-content, .Plant{
         margin: 1rem;
     }
     .logo{
@@ -103,12 +156,25 @@ nav ul li a{
         margin: 0;
         padding: 0;
     }
-
-    
     .banner-title{
         font-size: 1.5rem;
     }
     .banner-dis{
         font-size: 1rem;
+    }
+    .Plant-Cards{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .btn{
+        padding: 1.4rem 2rem;
+    }
+    .name{
+        font-size: 1rem;
+    }
+    .price{
+        font-size: 1rem;
+    }
+    .card-img{
+    width: 100%;
     }
 }
