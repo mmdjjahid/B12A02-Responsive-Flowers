@@ -37,7 +37,7 @@ body{
     padding: 0;
 }
 
-header, main{
+header, .banner, .Plant, .Lover{
     max-width: 1140px;
     margin: 0 auto;
 }
@@ -164,6 +164,36 @@ nav ul li a{
     margin-bottom: 20px;
 }
 
+.join{
+    background: url(../assets/news-letter-bg.png);
+    background-size:cover;
+    padding: 12.5rem 18.75rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-repeat: no-repeat;
+    color: #FFFFFF;
+}
+.join-title{
+    font-size: 3.125rem;
+    font-weight: bold;
+    margin: 0 0 1.5rem 0;
+}
+
+.search{
+    display: inline-flex;
+}
+.input::placeholder{
+    font-size: 1rem;
+    color: rgba(0, 0, 0, 0.5);
+    padding-left: 1.25rem;
+}
+.input{
+    width: 40rem;
+}
+
+
 @media screen and (max-width:640px){
     .hide{
         display: none;
@@ -205,4 +235,18 @@ nav ul li a{
     .Lover{
         flex-direction: column;
     }
+
+    .join{
+        padding: 6.8rem 2.25rem 4rem 2.25rem;
+    }
+
+    .join-title{
+        font-size: 1.25rem;
+        
+    }
+    .input{
+        width: 13.6rem;
+    }
+
+
 }
