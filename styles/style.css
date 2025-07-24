@@ -194,6 +194,48 @@ nav ul li a{
 }
 
 
+/* footer  */
+
+
+footer{
+    padding: 3.125rem 10rem;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 6.8rem;
+    align-items:start;
+}
+.footer-dis{
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 1.4rem;
+}
+
+.column ul{
+    padding-left: 0;
+}
+
+.column ul li{
+    list-style: none;
+    text-decoration: none;
+    margin-bottom: 3rem;
+    font-size: 1rem;
+    line-height: 24%;
+    
+    
+}
+
+.column ul li a{
+    text-decoration: none;
+    color: #6B7280;
+}
+.footer-icon{
+    display: flex;
+}
+.icon{
+    width: 2rem;
+    height: 2rem;
+    margin-left: 1.5rem;
+}
+
 @media screen and (max-width:640px){
     .hide{
         display: none;
@@ -246,6 +288,11 @@ nav ul li a{
     }
     .input{
         width: 13.6rem;
+    }
+    footer{
+        grid-template-columns: repeat(1, 1fr);
+        padding: 3.125rem 1.4rem ;
+        gap: 0;
     }
 
 
