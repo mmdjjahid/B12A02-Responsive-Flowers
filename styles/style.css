@@ -140,9 +140,22 @@ nav ul li a{
 
 /* Lover */
 
+.trusted{
+    width: 17.875rem;
+    height: 17.875rem;
+    position: absolute;
+    top: -20%;
+    
+    right: 44%;
+}
+
+
+
+
 .Lover{
     display: flex;
     gap: 3.75rem;
+    position: relative;
 }
 .lover-img{
     width: 100%;
