@@ -138,12 +138,37 @@ nav ul li a{
 }
 
 
+/* Lover */
+
+.Lover{
+    display: flex;
+    gap: 3.75rem;
+}
+.lover-img{
+    width: 100%;
+}
+
+.lover-content{
+    padding-top: 2.4rem;
+    padding-bottom: 2.4rem;
+}
+.lover-title{
+    font-weight: bold;
+    font-size: 3.1rem;
+    margin: 0 0 20px 0;
+}
+.subtitle{
+    color: rgba(0, 0, 0, 0.5);
+    font-weight: 400;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
 
 @media screen and (max-width:640px){
     .hide{
         display: none;
     }
-    header, .banner-content, .Plant{
+    header, .banner-content, .Plant, .Lover{
         margin: 1rem;
     }
     .logo{
@@ -176,5 +201,8 @@ nav ul li a{
     }
     .card-img{
     width: 100%;
+    }
+    .Lover{
+        flex-direction: column;
     }
 }
